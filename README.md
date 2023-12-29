@@ -8,7 +8,7 @@ ChatGPT based Recipe and Meal maker let you decide what can you eat with ingredi
 ![alt text](https://github.com/nitinsxngh/OpenAI-recipe-and-meal-maker/blob/main/screenshot/2.png?raw=true)
 
 #Screenshot 3
-![alt text](https://github.com/nitinsxngh/OpenAI-recipe-and-meal-maker/blob/main/screenshot/3.pngg?raw=true)
+![alt text](https://github.com/nitinsxngh/OpenAI-recipe-and-meal-maker/blob/main/screenshot/3.png?raw=true)
 
 #Screenshot 4
 ![alt text](https://github.com/nitinsxngh/OpenAI-recipe-and-meal-maker/blob/main/screenshot/4.png?raw=true)
