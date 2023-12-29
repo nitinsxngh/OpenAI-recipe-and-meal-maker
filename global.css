@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --h2: Inter;
+
+  /* font sizes */
+  --font-size-mini: 15px;
+  --h2-size: 17px;
+
+  /* Colors */
+  --white: #fff;
+  --primary: #1fcc79;
+  --form: #f4f5f7;
+  --main-text: #2e3e5d;
+  --color-lavender: #d0dbea;
+  --e5481: #3e5481;
+  --secondary: #ff6464;
+
+  /* Paddings */
+  --padding-6xl: 25px;
+  --padding-lgi: 19px;
+  --padding-13xl: 32px;
+
+  /* Border radiuses */
+  --br-13xl: 32px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<style type="text/css">
+    
+*{
+  -webkit-user-select: none;
+  cursor: default;
+}
+body{
+  background: ;
+}
+.wrap{
+    position: absolute;
+    /* margin: auto; */
+    width: 60px;
+    height: 180px;
+    left: 18px;
+    top: 80px;
+}
+.cat{
+  position: relative;
+  width: 60px; /* 40% smaller */
+  height: 72px; /* 40% smaller */
+  background: #2c3e50;
+  border-top-right-radius: 6px; /* 40% smaller */
+  border-top-left-radius: 18px; /* 40% smaller */
+  border-bottom-left-radius: 30px; /* 40% smaller */
+  border-bottom-right-radius: 30px; /* 40% smaller */
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 5s;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.time{
+  position: absolute;
+  top: 0;
+  left: 72px; /* Adjusted position */
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  color: whitesmoke;
+  font-size: 24px; /* 40% smaller */
+}
+.time b{
+  font-weight: normal;
+  font-size: 10.8px; /* 40% smaller */
+  padding-left: 4px; /* Adjusted padding */
+}
+.eyes{
+  position: absolute;
+  top: 12px; /* Adjusted position */
+  width: 30px; /* 40% smaller */
+  height: 6px; /* 40% smaller */
+  left: 15px; /* Adjusted position */
+  overflow: hidden;
+  -webkit-animation-name: eyes;
+  -webkit-animation-duration: 3s;
+  animation-name: eyes;
+  animation-duration: 3s;
+  animtaion-delay: 6s;
+  animation-iteration-count: infinite;
+}
+.eye{
+  position: absolute;
+  left: 0;
+  width: 4px; /* 40% smaller */
+  border-radius: 6px; /* 40% smaller */
+  height: 60%;
+  background: whitesmoke;
+}
+.eye.two{
+  left: initial;
+  right: 0;
+}
+.mouth{
+  position: absolute;
+  width: 24px; /* 40% smaller */
+  height: 15px; /* 40% smaller */
+  background: #c0392b;
+  left: 18px; /* Adjusted position */
+  top: 30px; /* Adjusted position */
+  border-bottom-left-radius: 12px; /* 40% smaller */
+  border-bottom-right-radius: 12px; /* 40% smaller */
+  overflow: hidden;
+  -webkit-animation-name: laught;
+  -webkit-animation-duration: 2s;
+  animation-name: laught;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.lezu{
+  position: absolute;
+  bottom: -18px; /* Adjusted position */
+  width: 24px; /* 40% smaller */
+  height: 24px; /* 40% smaller */
+  border-radius: 24px; /* 40% smaller */
+  background: #e74c3c;
+}
+.shadow{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60px; /* 40% smaller */
+  height: 12px; /* 40% smaller */
+  border-radius: 60px; /* 40% smaller */
+  background: rgba(0,0,0,.2);
+  -webkit-filter: blur(2px);
+  -webkit-animation-name: shadow;
+  -webkit-animation-duration: 5s;
+  animation-name: shadow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes laught {
+    0%   {height: 0px;}
+    100% {height: 15px; /* Adjusted height */}
+}
+@-webkit-keyframes eyes {
+    0%   {height: 0px;}
+    10%  {height: 6px; /* Adjusted height */}
+    20%  {height: 6px;}
+    30%  {height: 6px;}
+    40%  {height: 6px;}
+    50%  {height: 6px;}
+    60%  {height: 6px;}
+    70%  {height: 6px;}
+    80%  {height: 6px;}
+    90%  {height: 6px;}
+    100% {height: 0px;}
+}
+@-webkit-keyframes move {
+  0% { -webkit-transform: translateY(0); }
+  50% { -webkit-transform: translateY(-12px); /* Adjusted translateY */}
+  100% { -webkit-transform: translateY(0); }
+}
+@-webkit-keyframes shadow{
+  0% { -webkit-filter: blur(3px);} /* Adjusted blur */
+  50% { -webkit-filter: blur(9px);} /* Adjusted blur */
+  100% {-webkit-filter: blur(3px);} /* Adjusted blur */
+}
+
+</style>
+
+<body>
+<div class="wrap">
+<div class="cat">
+  <div class="eyes">
+    <div class="eye"></div>
+    <div class="eye two"></div>
+  </div>
+  <div class="mouth">
+    <div class="lezu"></div>
+  </div>
+  <div class="time">...</div>
+</div>
+<div class="shadow"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Load</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .book {
+      position: relative;
+      border: 5px solid #ecf0f1;
+      width: 100px;
+      height: 60px;
+    }
+
+    .book__page {
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      border-top: 5px solid #ecf0f1;
+      border-bottom: 5px solid #ecf0f1;
+      border-right: 5px solid #ecf0f1;
+      background: #1fcc79;
+      width: 50px;
+      height: 60px;
+      transform-origin: 0% 50%;
+      animation: flip 0.8s infinite linear;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes flip {
+      0% {
+        transform: perspective(600px) rotateY(-0deg);
+      }
+
+      20% {
+        background: #3b803e;
+      }
+
+      29.9% {
+        background: #3b803e;
+      }
+
+      30% {
+        transform: perspective(200px) rotateY(-90deg);
+        background: #1fcc79;
+      }
+
+      55% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: perspective(200px) rotateY(-180deg);
+        background: #1fcc79;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="book">
+    <div class="book__page"></div>
+    <div class="book__page"></div>
+    <div class="book__page"></div>
+  </div>
+</body>
+</html>
