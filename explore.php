@@ -329,8 +329,8 @@
 
                                 <!-- Use Edamam API to get detailed information and image -->
                                 <?php
-                                $edamam_app_id = '5ac82c8c'; // Replace with your Edamam API App ID
-                                $edamam_app_key = 'b07fcb77e26b20c8a825710d5e2bef27'; // Replace with your Edamam API App Key
+                                $edamam_app_id = 'Edamam_ID'; // Replace with your Edamam API App ID
+                                $edamam_app_key = 'Edamam_APP_KEY'; // Replace with your Edamam API App Key
                                 $meal_name = urlencode($meal);
                                 $edamam_meal_endpoint = "https://api.edamam.com/api/recipes/v2?type=public&q=$meal_name&app_id=$edamam_app_id&app_key=$edamam_app_key";
                                 $edamam_response = file_get_contents($edamam_meal_endpoint);
