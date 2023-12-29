@@ -108,8 +108,8 @@
             $prompt = "Create a detailed recipe for making '$selectedDish' including ingredients list and step-by-step instructions.";
 
             // Request to Edamam API to get meal image
-            $edamam_app_id = '5ac82c8c'; // Replace with your Edamam app ID
-            $edamam_app_key = 'b07fcb77e26b20c8a825710d5e2bef27'; // Replace with your Edamam app key
+            $edamam_app_id = 'Edaman_ID'; // Replace with your Edamam app ID
+            $edamam_app_key = 'Edaman_APP_KEY'; // Replace with your Edamam app key
             $edamam_endpoint = "https://api.edamam.com/api/recipes/v2?type=public&q=$selectedDish&app_id=$edamam_app_id&app_key=$edamam_app_key";
 
             $edamam_response = file_get_contents($edamam_endpoint);
@@ -132,7 +132,7 @@
         <div class="recipe">
             <?php
             // Continue with OpenAI API for recipe instructions
-            $api_key = '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'; // Replace with your GPT-3 API key
+            $api_key = 'OPEN_AI_API'; // Replace with your GPT-3 API key
             $endpoint = 'https://api.openai.com/v1/completions';
             $data = array(
                 'model' => 'text-davinci-002',
