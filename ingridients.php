@@ -307,7 +307,7 @@ const prompt = `Find 10 best ingredients name for a dish that suits the followin
 const apiEndpoint = 'https://api.openai.com/v1/completions';
 
 // Define other parameters like API key and max tokens
-const apiKey = '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';
+const apiKey = 'OPEN_AI-API';
 const maxTokens = 100;
 
 // Fetch ingredients from the ChatGPT API
