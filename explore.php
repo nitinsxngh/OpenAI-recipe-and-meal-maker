@@ -278,7 +278,7 @@
                     - Taste Type: $tasteType
                     - Checked Ingredients: $checkedIngredients";
 
-        $openai_api_key = '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'; // Replace with your GPT-3 API key
+        $openai_api_key = 'OPEN_AI_API'; // Replace with your GPT-3 API key
         $openai_endpoint = 'https://api.openai.com/v1/completions';
         $openai_data = array(
             'model' => 'text-davinci-002',
